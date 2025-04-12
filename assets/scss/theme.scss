@@ -1,0 +1,44 @@
+@import 'custom-variables';
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: $font-family-base;
+    color: $body-color;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn {
+    @extend .btn;
+}
+
+.modal {
+    @extend .modal;
+}
+
+.form-control {
+    @extend .form-control;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header {
+    background-color: $header-bg;
+    padding: 20px 0;
+}
+
+.footer {
+    background-color: $footer-bg;
+    padding: 20px 0;
+}
